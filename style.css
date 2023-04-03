@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  padding: 0rem;
+  margin: 0rem;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  background-color: #2c3639;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+#header-h1 {
+  color: white;
+  font-size: 4.5rem;
+  font-family: "Lobster", cursive;
+  text-shadow: 2px 2px 2px black;
+}
+
+#header-icon {
+  color: rgb(255, 255, 0);
+  text-shadow: 2px 2px 2px black;
+  font-size: 4rem;
+}
+
+body {
+  background-color: #d8d8d8;
+}
+
+main {
+}
+
+.main-note-div {
+  border: 3px solid black;
+  height: 25rem;
+  width: 35rem;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 1rem;
+}
+
+.button-div {
+  height: 17%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 2px solid black;
+}
+
+#note-textarea {
+  height: 83%;
+  resize: none;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  font-size: 1.7rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.note-buttons {
+  font-size: 2.4rem;
+  color: white;
+}
+
+.button-div {
+  background-color: #18292d;
+}
+
+.button-div button {
+  width: 32%;
+  height: 88%;
+  border: 2px solid rgb(3, 3, 3);
+  border-radius: 5px;
+  -webkit-text-stroke: 0.8px black;
+}
+
+#note-button-edit {
+  background-color: rgb(0, 106, 255);
+}
+
+#note-button-save {
+  background-color: rgb(4, 141, 54);
+}
+
+#note-button-delete {
+  background-color: rgb(228, 38, 16);
+}
+
+.add-note-button-div {
+  text-align: end;
+}
+.add-note-button {
+  background-color: rgb(222, 81, 0);
+  color: white;
+  font-size: 3rem;
+  font-family: "Lobster", cursive;
+  text-shadow: 3px 3px 4px black;
+  margin: 0.5rem 3rem;
+  border-radius: 10px;
+  width: 13rem;
+  height: 4.5rem;
+  box-shadow: 2px 2px 4px black;
+}
+
+.writing {
+  pointer-events: none;
+}
+
+@media (width < 460px) {
+  .add-note-button-div {
+    text-align: center;
+  }
+}
+@media (width < 376px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (width < 332px) {
+  html {
+    font-size: 50%;
+  }
+  .main-note-div {
+    height: 30rem;
+  }
+}
+@media (width < 332px) {
+  html {
+    font-size: 45%;
+  }
+}
